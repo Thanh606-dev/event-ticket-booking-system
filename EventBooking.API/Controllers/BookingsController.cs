@@ -133,7 +133,8 @@ namespace EventBooking.API.Controllers
                 UnitPrice = ticket.Price,
                 TotalPrice = ticket.Price * request.Quantity,
                 CreatedAt = DateTime.UtcNow,
-                Status = "Confirmed",
+                Status = BookingStatuses.Confirmed,
+
                 IdempotencyKey = key
             };
 

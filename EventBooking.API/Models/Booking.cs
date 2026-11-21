@@ -25,6 +25,6 @@ namespace EventBooking.API.Models
             = DateTime.UtcNow;
 
         public string? IdempotencyKey { get; set; }
-        public string Status { get; set; } = "Confirmed";
+        public string Status { get; set; } = BookingStatuses.Confirmed;
     }
 }
